@@ -1,0 +1,27 @@
+ALGORITHM sentence
+VAR 
+ sentence: STRING;
+ length_counter, word_counter, vowel_counter: INTEGER;
+
+BEGIN
+  // input
+   FOR i FROM 0 TO s-1 TO
+  write("enter the sentence");
+  Read(s);
+  END_FOR
+  // processing
+   FOR i FROM 0 TO s-1 TO
+   length_counter := length_counter + 1;
+   IF is_letter (sentence[i]) THEN
+   IF i = 0 OR NOT is is_letter(sentence[i - 1]) THEN
+    word_counter :=word_counter + 1;
+    IF sentence[i] IN vowel THEN
+    vowel_counter := vowel_counter + 1;
+ END_IF
+ END_FOR
+  // output
+  write(length_counter);
+  write(word_counter);
+  write(vowel_counter);
+END
+  
